@@ -1,4 +1,5 @@
 import 'package:apptech_ui/dashboard.dart';
+import 'package:apptech_ui/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const DashBorad(),
+      home: const SplashScreen(),
     );
   }
 }

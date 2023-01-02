@@ -80,7 +80,7 @@ class DashBorad extends StatelessWidget {
                           "Muhammad Ali",
                           style: TextStyle(
                               fontSize: 20,
-                              color: Colors.black,
+                              color: Color(0xFF707070),
                               fontWeight: FontWeight.bold),
                         ),
 
@@ -88,7 +88,7 @@ class DashBorad extends StatelessWidget {
                           "Student1234",
                           style: TextStyle(
                               fontSize: 16,
-                              color: Colors.black,
+                              color: Color(0xFF707070),
                               fontWeight: FontWeight.bold),
                         ),
                         const Padding(
@@ -103,7 +103,7 @@ class DashBorad extends StatelessWidget {
                             "Batch: PR2-202203G",
                             style: TextStyle(
                                 fontSize: 14,
-                                color: Colors.black,
+                                color: Color(0xFF707070),
                                 fontWeight: FontWeight.bold),
                           ),
                         ),
@@ -416,7 +416,7 @@ class DashBorad extends StatelessWidget {
                               "ONGOING EVENTS",
                               style: TextStyle(
                                   fontSize: 20,
-                                  color: Colors.black,
+                                  color: Color(0xFF707070),
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
