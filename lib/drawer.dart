@@ -5,35 +5,27 @@ class Drawers extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView(
-        // Important: Remove any padding from the ListView.
-        padding: EdgeInsets.zero,
+    return Drawer(
+      backgroundColor: const Color(0xFF303030),
+      child: Column(
         children: [
-          const DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.blue,
-            ),
-            child: Text('Drawer Header'),
+          Container(
+            height: 100,
+            width: double.infinity,
+            margin: const EdgeInsets.only(top: 40, left: 40),
+            // padding: const EdgeInsets.only(top: 20, left: 20),
+            alignment: Alignment.bottomLeft,
+            // color: Theme.of(context).primaryColor,
+            child: Image.asset("assets/apptech.png"),
           ),
-          ListTile(
-            leading: const Icon(
-              Icons.home,
-            ),
-            title: const Text('Page 1'),
-            onTap: () {
-              Navigator.pop(context);
-            },
+          const SizedBox(
+            height: 15,
           ),
-          ListTile(
-            leading: const Icon(
-              Icons.train,
-            ),
-            title: const Text('Page 2'),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
+          // Container(
+          //   height: 100,
+          //   width: 150,
+          //   child: Row(),
+          // ),
         ],
       ),
     );

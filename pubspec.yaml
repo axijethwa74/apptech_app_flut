@@ -63,6 +63,9 @@ flutter:
   assets:
     - assets/apptech.png
     - assets/vector.png
+    - assets/news.png
+    - assets/eve.png
+    
    
     
 

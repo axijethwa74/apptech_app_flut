@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:apptech_ui/dashboard.dart';
 import 'package:apptech_ui/login.dart';
 import 'package:flutter/material.dart';
@@ -13,14 +15,10 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    _navigrateToHome();
-  }
-
-  _navigrateToHome() async {
-    await Future.delayed(const Duration(milliseconds: 3000), () {});
-    // ignore: use_build_context_synchronously
-    Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => const LoginScreen()));
+    Timer(Duration(seconds: 5), (){
+      Navigator.pushReplacement(context,
+          MaterialPageRoute(builder: (context) => const LoginScreen()));
+    });
   }
 
   @override
