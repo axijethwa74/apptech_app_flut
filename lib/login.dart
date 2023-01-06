@@ -24,6 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Column(
         children: [
           SizedBox(
@@ -61,9 +62,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     ReusableTextFormField(
                       textlabel: "Student ID",
-                        controller: emailController,
-                        emptytext: "please enter your email",
-                        hinttext: "Enter your Student Id",
+                      controller: emailController,
+                      emptytext: "please enter your email",
+                      hinttext: "Enter your Student Id",
                       textvalid: "please enter your valid student Id",
                     ),
                     SizedBox(
@@ -78,11 +79,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     SizedBox(
                       height: 10,
                     ),
-                    Text(
-                      "Forget Password",
-                      textAlign: TextAlign.right,
-                      style: KTextforgetpassword
-                    ),
+                    Text("Forget Password",
+                        textAlign: TextAlign.right, style: KTextforgetpassword),
                   ],
                 ),
               ),
@@ -92,7 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               MaterialButton(
-                  onPressed: (){
+                  onPressed: () {
                     Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
@@ -107,10 +105,8 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           Center(
             child: Container(
-              child: Text(
-                "DEVELOPED BY APTECH SHAHRA-E-FAISAL",
-                style: KtextLabelbottom
-              ),
+              child: Text("DEVELOPED BY APTECH SHAHRA-E-FAISAL",
+                  style: KtextLabelbottom),
             ),
           ),
         ],
