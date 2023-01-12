@@ -14,7 +14,7 @@ class ReuableButton extends StatelessWidget {
       margin: EdgeInsets.only(left: 10),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20), gradient: KLinearGradient),
-      constraints: const BoxConstraints(maxWidth: 146.0, minHeight: 47.0),
+      constraints: const BoxConstraints(maxWidth: 146.0, minHeight: 40.0),
       alignment: Alignment.center,
       child: Text(
         "$name",

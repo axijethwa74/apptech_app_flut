@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 
 class ReusableTextFormField extends StatelessWidget {
   TextEditingController controller;
-  String emptytext  , hinttext;
+  String emptytext, hinttext;
   String? textvalid;
   String textlabel;
 
   ReusableTextFormField(
-      {required this.controller, required this.emptytext, this.textvalid, required this.hinttext,
-      required this.textlabel
-      });
+      {required this.controller,
+      required this.emptytext,
+      this.textvalid,
+      required this.hinttext,
+      required this.textlabel});
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -30,7 +32,8 @@ class ReusableTextFormField extends StatelessWidget {
       },
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-        contentPadding: const EdgeInsets.symmetric(horizontal: 20 , vertical: 15),
+        contentPadding:
+            const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         hintText: '$hinttext',
         label: Text(textlabel),
         border: OutlineInputBorder(
@@ -40,7 +43,3 @@ class ReusableTextFormField extends StatelessWidget {
     );
   }
 }
-
-
-
-

@@ -55,35 +55,39 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(35.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    ReusableTextFormField(
+              // Padding(
+              //   padding: const EdgeInsets.all(35.0),
+              // child:
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Container(
+                    child: ReusableTextFormField(
                       textlabel: "Student ID",
                       controller: emailController,
                       emptytext: "please enter your email",
                       hinttext: "Enter your Student Id",
                       textvalid: "please enter your valid student Id",
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    ReusableTextFormField(
-                      textlabel: "Password",
-                      controller: emailController,
-                      emptytext: "please enter your password",
-                      hinttext: "Enter your Password",
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text("Forget Password",
-                        textAlign: TextAlign.right, style: KTextforgetpassword),
-                  ],
-                ),
+                  ),
+
+                  // SizedBox(
+                  //   height: 10,
+                  // ),
+                  ReusableTextFormField(
+                    textlabel: "Password",
+                    controller: emailController,
+                    emptytext: "please enter your password",
+                    hinttext: "Enter your Password",
+                  ),
+                  // SizedBox(
+                  //   height: 10,
+                  // ),
+                  Text("Forget Password",
+                      textAlign: TextAlign.right, style: KTextforgetpassword),
+                ],
               ),
+              // ),
             ],
           ),
           Row(
@@ -100,9 +104,9 @@ class _LoginScreenState extends State<LoginScreen> {
               ReuableButton(name: "SIGN UP"),
             ],
           ),
-          SizedBox(
-            height: 30,
-          ),
+          // SizedBox(
+          //   height: 30,
+          // ),
           Center(
             child: Container(
               child: Text("DEVELOPED BY APTECH SHAHRA-E-FAISAL",
